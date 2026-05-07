@@ -1,0 +1,38 @@
+{
+  "listeners": [
+    {
+      "address": "0.0.0.0",
+      "port": 8080,
+      "https": false
+    }
+  ],
+  "db_clients": [
+    {
+      "name": "default",
+      "rdbms": "mysql",
+      "host": "127.0.0.1",
+      "port": 3306,
+      "dbname": "chatforum",
+      "user": "root",
+      "passwd": "your_password",
+      "client_encoding": "utf8mb4",
+      "connection_number": 4,
+      "is_fast": true
+    }
+  ],
+  "app": {
+    "document_root": "./frontend/dist",
+    "file_types": ["html", "js", "css", "png", "jpg", "gif", "ico", "woff2", "svg", "json", "map"],
+    "upload_dir": "./uploads",
+    "max_connections": 10000,
+    "max_threads": 4
+  },
+  "jwt": {
+    "secret": "change-this-to-a-secure-random-string",
+    "expiration_hours": 24
+  },
+  "log": {
+    "log_path": "./logs",
+    "log_level": "INFO"
+  }
+}

@@ -1,0 +1,81 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Build directories
+build/
+cmake-build-*/
+
+# IDE
+.vs/
+.vscode/
+*.user
+*.suo
+*.sln
+*.vcxproj*
+
+# Node
+node_modules/
+dist/
+
+# Uploads (keep directory structure)
+uploads/images/*
+uploads/avatars/*
+!uploads/images/.gitkeep
+!uploads/avatars/.gitkeep
+
+# Logs
+logs/*.log
+
+# Environment
+.env
+.env.local
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Config with secrets
+config/config.json
+!config/config.json.example
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Python backend uploads (user-generated content)
+python_backend/uploads/images/*
+!python_backend/uploads/images/.gitkeep
+
+# Trae documents (local teaching docs, not part of project)
+.trae/
